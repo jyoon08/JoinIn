@@ -15,9 +15,6 @@ body {
     width: 100vw;
     max-width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: #000000;
 }
 
@@ -82,7 +79,7 @@ nav ul li a{
 }
 
 .hero_image {
-    flex-basis: 45%;
+    flex-basis: 50%;
     margin-top: 4rem;
 
 }
@@ -152,5 +149,43 @@ h2 {
 .hero_btn2:hover {
     background: #ff5a21;
     color: white;
+    transform: scale(1.02);
+}
+
+
+
+/*Volunteer Page*/
+
+.vol_hero_container {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.vol_hero_container h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.vol_hero_container button {
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 20px 30px;
+    cursor: pointer; 
+    background: #ff5a21;
+    color: white;
+    border: 4px solid #ff5a21;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.2s ease;
+}
+
+.vol_hero_container button:hover {
+    background: transparent;
+    color: #ff5a21;
     transform: scale(1.02);
 }
