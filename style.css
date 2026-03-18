@@ -160,10 +160,9 @@ h2 {
     position: relative;
     z-index: 1;
     width: 80%;
-    height: 30%;
+    margin: 80px auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     align-items: center;
 }
 
@@ -188,4 +187,27 @@ h2 {
     background: transparent;
     color: #ff5a21;
     transform: scale(1.02);
+}
+
+.vol_picks_container {
+    width: 100vw;
+    
+    background-color: #4061b3;
+}
+
+.vol_picks_header {
+    position: absolute;
+
+}
+
+.vol_picks_pods {
+    display: flex;
+}
+
+.vol_picks_pod {
+    width: 10%;
+}
+
+.vol_picks_pod h1 {
+    font-size: 30px;
 }
