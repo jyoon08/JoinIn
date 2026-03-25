@@ -156,6 +156,12 @@ h2 {
 
 /*Volunteer Page*/
 
+.vol_container {
+    width: 100%;
+    height: 100vh;
+
+}
+
 .vol_hero_container {
     position: relative;
     z-index: 1;
@@ -190,22 +196,33 @@ h2 {
 }
 
 .vol_picks_container {
-    width: 100vw;
-    
+    width: 100%;
+    height: 50vh;
     background-color: #4061b3;
+    display: flex;
 }
 
-.vol_picks_header {
-    position: absolute;
+.vol_picks_items {
+    position: relative;
+    width: 80%;
+    margin: auto;
 
 }
 
 .vol_picks_pods {
+    margin-top: 50px;
     display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 
 .vol_picks_pod {
-    width: 10%;
+    width: 30%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+
 }
 
 .vol_picks_pod h1 {
