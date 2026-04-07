@@ -206,7 +206,14 @@ h2 {
     position: relative;
     width: 80%;
     margin: auto;
+}
 
+.vol_picks_items h1 {
+    color: white;
+}
+
+.vol_picks_items h2 {
+    color: black;
 }
 
 .vol_picks_pods {
@@ -220,9 +227,8 @@ h2 {
     width: 30%;
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
-
 }
 
 .vol_picks_pod h1 {
