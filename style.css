@@ -188,7 +188,7 @@ h2 {
 
 .vol_picks_container {
     width: 100%;
-    min-height: auto;
+    height: 100vh;
     background-color: #4061b3;
     display: flex;
 }
@@ -196,7 +196,7 @@ h2 {
 .vol_picks_items {
     position: relative;
     width: 80%;
-    margin: auto;
+    margin: 80px auto;
 }
 
 .vol_picks_items h1 {
@@ -209,6 +209,7 @@ h2 {
 
 .vol_picks_pods {
     margin-top: 50px;
+    height: auto;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -219,9 +220,25 @@ h2 {
     background-color: white;
     color: black;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 40px;
+    display:flex;
+    flex-direction: column;
 }
 
-.vol_picks_pod h1 {
+.vol_picks_pod h2 {
     font-size: 30px;
+}
+
+.vol_picks_pod p {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.vol_picks_pod img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    align-self: flex-end;
+    border-radius: 30px;
+    margin-top: auto;
 }
