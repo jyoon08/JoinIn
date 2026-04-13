@@ -46,7 +46,7 @@ header {
 nav ul li{
     display: inline;
     margin-left: 50px;
-    font-size: 18px;
+    font-size: 18px ;
 }
 
 nav ul li a{
@@ -210,6 +210,7 @@ h2 {
 .vol_picks_pods {
     margin-top: 50px;
     height: auto;
+    max-height: 80%;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -221,7 +222,7 @@ h2 {
     color: black;
     padding: 30px;
     border-radius: 40px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -241,4 +242,19 @@ h2 {
     align-self: flex-end;
     border-radius: 30px;
     margin-top: auto;
+}
+
+.pod_details {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.pod_details img {
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+    padding: 5px;
+    cursor: pointer;
 }
