@@ -163,6 +163,13 @@ h2 {
     align-items: center;
 }
 
+@media (max-width: 1150px) {
+    .vol_hero_container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .vol_hero_container h1 {
     font-size: 80px;
     font-weight: 600;
