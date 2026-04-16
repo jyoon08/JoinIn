@@ -54,6 +54,12 @@ nav ul li a{
     color: #000000;
 }
 
+@media screen and (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+}
+
 .hero_container {
     position: relative;
     z-index: 1;
@@ -163,11 +169,21 @@ h2 {
     align-items: center;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
+    
     .vol_hero_container {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column
     }
+
+    .vol_hero_container button {
+        margin-top: 40px;
+    }
+
+    .vol_hero_container h1 {
+        text-align: center;
+    }
+
 }
 
 .vol_hero_container h1 {
