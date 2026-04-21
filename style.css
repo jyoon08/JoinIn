@@ -184,7 +184,13 @@ h2 {
         text-align: center;
     }
 
+    .vol_picks_items h1 {
+        justify-self: center;
+        text-align: center;
+    }
+
 }
+
 
 .vol_hero_container h1 {
     font-size: 80px;
@@ -280,4 +286,21 @@ h2 {
     border-radius: 0;
     padding: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .vol_picks_pods {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .vol_picks_pod {
+        width: auto;
+        margin-bottom: 80px;
+    }
+
+    .vol_picks_container {
+        height: fit-content;
+    }
 }
