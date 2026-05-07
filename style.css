@@ -5,11 +5,35 @@
 }
 
 body {
-    font-family: "fira-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
 }
+
+:root {
+    --primary-color: #3262b5;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+    --orange-color: #ff5a21;
+    --dark-blue-color: #31528a;
+    --light-blue-color: #ccdaf7;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 
 #head {
     background-color: #ccdaf3;
@@ -440,3 +464,264 @@ h2 {
     }
     
 }
+
+ /* For organizations */
+ .for-orgaizations-top {
+     height: 30vh;
+     align-content: center;
+ }
+
+ .for-organizations-top-content {
+     display: flex;
+     align-items: center;
+     /* Aligns children to the top */
+     justify-content: space-between;
+
+     /* Adjust this to set the exact distance from the navbar */
+     margin: auto;
+     max-width: 1300px;
+     height: 100%;
+ }
+
+ .for-organizations-top-content button {
+     color: white;
+     border-radius: 20px;
+     border: 4px solid var(--orange-color);
+     background-color: #ff5a21;
+     Height: 120px;
+     width: 300px;
+     padding: 4px;
+     font-size: 1.8rem;
+     line-height: 1.4;
+     font-weight: bold;
+     margin: none;
+     transition: background .3s ease, color .3s ease;
+     margin-right: 20px;
+
+ }
+
+ .for-organizations-top-content button:hover {
+     background-color: white;
+     color: #ff5a21;
+     cursor: pointer;
+ }
+
+ .for-orgaizations-top-text {
+     color: #3262b5;
+ }
+
+ .tree-image-text {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     height: 100%;
+ }
+
+ .tree-image-text img {
+     box-shadow: 0px 7px 5px 5px #adadad;
+     border-radius: 50%;
+     margin: 0px 30px;
+     height: 80%;
+
+ }
+
+ @media screen and (max-width: 768px) {
+     .tree-image-text img {
+         display: none;
+     }
+
+     .for-organizations-top-content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: none;
+     }
+
+     .for-organizations-top-content button {
+         margin: 30px;
+         width: 70%;
+     }
+
+     .for-orgaizations-top {
+         height: 33vh;
+     }
+
+     .for-organizations-top-text {
+         margin: 0px 15px;
+     }
+ }
+
+ /* For organizations- bottom*/
+ .hero-bottom {
+     background-color: var(--dark-blue-color);
+     height: 90vh;
+     align-content: center;
+     width: 100%;
+ }
+
+ .hero-bottom-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: auto;
+     max-width: 1300px;
+
+ }
+
+ @media screen and (max-width: 768px) {
+     .hero-bottom-content {
+         flex-direction: column;
+         align-items: center;
+         justify-content: none;
+         width: 100%;
+     }
+
+     .hero-bottom-triplet {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+
+     .hero-bottom-LLH-LFL {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         gap: none;
+         justify-content: none;
+     }
+
+     .Hero-bottom-singular {
+         width: 100%;
+         margin: none;
+     }
+
+     .hero-bottom-LFL {
+         width: 50%;
+     }
+
+ }
+
+ .hero-bottom-triplet {
+     display: flex;
+     align-content: center;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 0px 0px 20px 40px;
+     height: 100%;
+ }
+
+
+
+ .hero-bottom-LLH-LFL {
+     display: flex;
+     gap: 10px;
+     margin: 20px 0px;
+     height: 75%;
+ }
+
+
+ .hero-bottom-LFL {
+     background: #eeeeee;
+     height: auto;
+     width: 30%;
+     border-radius: 30px;
+     display: flex;
+     flex-direction: column;
+ }
+
+
+ .hero-bottom-LFL img {
+     height: 30%;
+     width: 100%;
+     border-radius: 30px;
+     object-fit: cover;
+ }
+
+ .btn-fa {
+     width: 95%;
+     /* Adjusted width */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .btn-fa button {
+     width: 100%;
+     /* Button fills parent */
+     background-color: #eeeeee;
+     /* Change to a visible color */
+     color: black;
+     border: none;
+     border-radius: 30px;
+     padding: 15px;
+     /* Added padding for height */
+     font-size: large;
+     font-weight: 700;
+     cursor: pointer;
+ }
+
+ .hero-bottom-LFL p {
+     flex-grow: 1;
+     /* Pushes the btn-fa to the bottom */
+     margin: 0px 10px;
+ }
+
+
+ .Hero-bottom-singular {
+     background: #fff8f8;
+     height: auto;
+     width: 28%;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     gap: 15px;
+     padding: 15px;
+     margin: 15px;
+ }
+
+ .singular-sm {
+     background-color: #EFEFEF;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 11vh;
+     width: 95%;
+ }
+
+
+ .singular-sm-triplet {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin-left: 10px;
+     padding: 4px 0px;
+ }
+
+
+ .singular-sm-btn button {
+     background-color: #cccccc;
+     color: #111;
+     height: 100%;
+     width: 100%;
+     border: none;
+     border-radius: 4px;
+     margin-right: 10px;
+     font-weight: 700;
+     transition: background .3s ease;
+     padding: 2px;
+ }
+
+ .singular-sm-btn {
+     width: 36%;
+     margin-right: 10px;
+ }
+
+ .singular-sm-btn button:hover {
+     background-color: #B3B3B3;
+     cursor: pointer;
+ }
+
