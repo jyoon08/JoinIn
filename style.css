@@ -29,13 +29,14 @@ header {
     width: 100%;
     height: auto;
     margin: auto;
-    padding: 20px 40px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
     flex-wrap: nowrap;
+    background-color: #c9daf8ff;
 }
 
 .brand {
@@ -49,20 +50,34 @@ nav {
     align-items: center;
 }
 
-nav ul li{
-    display: inline;
-    margin-left: 50px;
+.menu {
+    display: flex;
+    transition: 0.3s;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
     font-size: 18px;
+    transition: 0.3s;
 }
 
-nav ul li a{
+.menu li a{
     text-decoration: none;
+    padding: 40px 40px;
     color: #000000;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.menu_bars {
-    display: none;
+.menu li a:hover {
+    box-shadow: 0 -5px 0px black inset,
+    500px 0 0 rgba(255,255,255,.1) inset;
 }
+
+/* .menu_bars {
+    display: none;
+} */
 
 .hamburger {
     position: relative;
@@ -103,19 +118,66 @@ nav ul li a{
     z-index: 3;
 }
 
+.hamburger,
+.toggle_menu {
+    display: none;
+}
+
+nav input:checked ~ .hamburger {
+    background: transparent;
+}
+
+nav input:checked ~ .hamburger:before {
+    top: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+nav input:checked ~ .hamburger:after {
+    top: 0;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+nav input:checked ~ .menu {
+    right: 0;
+}
+
 @media screen and (max-width: 1000px) {
-    nav ul {
-        display: none;
+    .hamburger, .toggle_menu {
+        display: block;
+    }
+    
+    header {
+        height: 94px;
     }
 
-    .menu_bars {
-        display: block;
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #c9daf8ff;
+        width: 300px;
+        height: 100%;
+        padding-top: 94px;
+    }
+    
+    .menu li {
+        width: 100%;
+    }
+    .menu li a {
+        font-size: 2rem;
+        padding: 40px 40px;
+        width: 100%;
     }
 }
 
 .hero_container {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 80%;
     height: auto;
     display: flex;
