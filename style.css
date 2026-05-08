@@ -64,7 +64,7 @@ header {
     position: relative;
     z-index: 1;
     flex-wrap: nowrap;
-    background-color: #c9daf8ff;
+    background-color: var(--light-blue-color);
 }
 
 .brand {
@@ -187,7 +187,7 @@ nav input:checked ~ .menu {
         position: fixed;
         top: 0;
         right: -300px;
-        background: #c9daf8ff;
+        background: var(--light-blue-color);
         width: 300px;
         height: 100%;
         padding-top: 94px;
@@ -241,8 +241,6 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 60px;
-    color: white;
     font-size: 30px;
 }
 
@@ -264,30 +262,30 @@ h2 {
 }
 
 .hero_btn { 
-    background: #4061b3;
+    background: var(--dark-blue-color);
     color: white;
     margin-right: 30px;
     margin-bottom: 20px;
-    border: 4px solid #4061b3;
+    border: 4px solid var(--dark-blue-color);
     transition: background 0.3s ease, transform 0.3s ease, color 0.2s ease;
 }
 
 .hero_btn:hover {
     background: transparent;
-    color: #4061b3;
+    color: var(--dark-blue-color);
     transform: scale(1.02);
 }
 
 .hero_btn2 { 
     background: transparent;
-    border: 4px solid #ff5a21;
-    color: #ff5a21;
+    border: 4px solid var(--orange-color);
+    color: var(--orange-color);
     transition: background 0.3s ease, transform 0.3s ease, color 0.2s ease;
 
 }
 
 .hero_btn2:hover {
-    background: #ff5a21;
+    background: var(--orange-color);
     color: white;
     transform: scale(1.02);
 }
@@ -295,7 +293,7 @@ h2 {
 .stats_section {
     height: 100vh;
     width: 100%;
-    background-color: #4061b3;
+    background-color: var(--dark-blue-color);
     padding: 80px 0px;
     justify-items: center;
 }
@@ -325,7 +323,7 @@ h2 {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background-image: radial-gradient(closest-side, #ff5a21 80%, transparent);
+    background-image: radial-gradient(closest-side, var(--orange-color) 80%, transparent);
     color: white;
 }
 
@@ -425,7 +423,7 @@ h2 {
 
 .vol_hero_container {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 80%;
     margin: 0 auto;
     padding: 80px 0;
@@ -468,22 +466,22 @@ h2 {
     font-weight: 400;
     padding: 20px 30px;
     cursor: pointer; 
-    background: #ff5a21;
+    background: var(--orange-color);
     color: white;
-    border: 4px solid #ff5a21;
+    border: 4px solid var(--orange-color);
     transition: background 0.3s ease, transform 0.3s ease, color 0.2s ease;
 }
 
 .vol_hero_container button:hover {
     background: transparent;
-    color: #ff5a21;
+    color: var(--orange-color);
     transform: scale(1.02);
 }
 
 .vol_picks_container {
     width: 100%;
     height: 100vh;
-    background-color: #4061b3;
+    background-color: var(--dark-blue-color);
     display: flex;
 }
 
@@ -522,6 +520,7 @@ h2 {
 
 .vol_picks_pod h2 {
     font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 .vol_picks_pod p {
@@ -597,7 +596,7 @@ h2 {
      color: white;
      border-radius: 20px;
      border: 4px solid var(--orange-color);
-     background-color: #ff5a21;
+     background-color: var(--orange-color);
      Height: 120px;
      width: 300px;
      padding: 4px;
@@ -733,18 +732,30 @@ h2 {
  .hero-bottom-LFL {
      background: #eeeeee;
      height: auto;
-     width: 30%;
-     border-radius: 30px;
+     width: 40%;
+     border-radius: 40px;
      display: flex;
      flex-direction: column;
+     padding: 30px 30px 0px 30px;
  }
 
+  .hero-bottom-LFL h2 {
+      font-size: 30px;
+      margin-bottom: 2rem;
+  }
+
+ .hero-bottom-LFL p {
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
 
  .hero-bottom-LFL img {
-     height: 30%;
-     width: 100%;
-     border-radius: 30px;
-     object-fit: cover;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: auto;
+    align-self: flex-end;
  }
 
  .btn-fa {
@@ -753,6 +764,7 @@ h2 {
      display: flex;
      justify-content: center;
      align-items: center;
+    
  }
 
  .btn-fa button {
