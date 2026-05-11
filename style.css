@@ -461,15 +461,18 @@ h2 {
 }
 
 .vol_hero_container button {
+color: white;
     border-radius: 20px;
-    font-size: 32px;
-    font-weight: 400;
-    padding: 20px 30px;
-    cursor: pointer; 
-    background: var(--orange-color);
-    color: white;
     border: 4px solid var(--orange-color);
-    transition: background 0.3s ease, transform 0.3s ease, color 0.2s ease;
+    background-color: var(--orange-color);
+    Height: 120px;
+    width: 300px;
+    padding: 4px;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: none;
+    transition: 0.3s ease;
 }
 
 .vol_hero_container button:hover {
@@ -577,6 +580,7 @@ h2 {
  /* For organizations */
  .for-orgaizations-top {
      height: 30vh;
+     width: 100%;
      align-content: center;
  }
 
@@ -588,7 +592,7 @@ h2 {
 
      /* Adjust this to set the exact distance from the navbar */
      margin: auto;
-     max-width: 1300px;
+     width: 80%;
      height: 100%;
  }
 
@@ -604,8 +608,7 @@ h2 {
      line-height: 1.4;
      font-weight: bold;
      margin: none;
-     transition: background .3s ease, color .3s ease;
-     margin-right: 20px;
+     transition: 0.3s ease;
 
  }
 
@@ -613,6 +616,7 @@ h2 {
      background-color: white;
      color: #ff5a21;
      cursor: pointer;
+     transform: scale(1.02);
  }
 
  .for-orgaizations-top-text {
@@ -622,14 +626,14 @@ h2 {
  .tree-image-text {
      display: flex;
      align-items: center;
-     gap: 10px;
+     gap: 50px;
      height: 100%;
  }
 
  .tree-image-text img {
      box-shadow: 0px 7px 5px 5px #adadad;
      border-radius: 50%;
-     margin: 0px 30px;
+     margin: 0px 30px 0 0;
      height: 80%;
 
  }
@@ -673,7 +677,7 @@ h2 {
      align-items: center;
      justify-content: space-between;
      margin: auto;
-     max-width: 1300px;
+     width: 80%;
 
  }
 
@@ -715,7 +719,7 @@ h2 {
      align-content: center;
      flex-direction: column;
      justify-content: space-between;
-     margin: 0px 0px 20px 40px;
+     margin: none;
      height: 100%;
  }
 
@@ -723,8 +727,8 @@ h2 {
 
  .hero-bottom-LLH-LFL {
      display: flex;
-     gap: 10px;
-     margin: 20px 0px;
+     gap: 50px;
+     margin: 50px 0px;
      height: 75%;
  }
 
@@ -790,7 +794,7 @@ h2 {
 
 
  .Hero-bottom-singular {
-     background: #fff8f8;
+     background: white;
      height: auto;
      width: 28%;
      border-radius: 20px;
@@ -800,11 +804,10 @@ h2 {
      justify-content: space-around;
      gap: 15px;
      padding: 15px;
-     margin: 15px;
  }
 
  .singular-sm {
-     background-color: #EFEFEF;
+     background-color: rgb(207, 207, 207);
      border-radius: 8px;
      display: flex;
      align-items: center;
@@ -825,7 +828,7 @@ h2 {
 
 
  .singular-sm-btn button {
-     background-color: #cccccc;
+     background-color: rgb(155, 155, 155);
      color: #111;
      height: 100%;
      width: 100%;
