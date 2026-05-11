@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css"
-    <link rel="stylesheet" href="https://use.typekit.net/crg3ozs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/361bfb2822.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
 </head>
 <body>
     <!-- hero section -->
@@ -15,22 +20,21 @@
 
             <header>
                 <!-- navbar -->
-
                 <div class="brand">
                     <a href="./index.html"><img src="images/1_Basic.png" style="margin-right: 20px;" height="50" alt="brand logo"></a>
                 </div>
-
                 <nav>
-                    <ul>
+                    <input type="checkbox" class="toggle_menu">
+                    <div class="hamburger"></div>
+
+                    <ul class="menu">
                         <li><a href="./volunteers.html">Volunteers</a></li>
-                        <li><a href="">Organizations</a></li>
+                        <li><a href="./for_organizations.html">Organizations</a></li>
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>      
+                        <li><a href="">Contact</a></li>                 
                     </ul>
-                    <div class="menu_bars"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></div>
+                    <!--<div class="menu_bars"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></div> -->
                 </nav>
-
-
                 <!-- navbar ends -->
             </header>
         
@@ -51,7 +55,7 @@
                     <div class="vol_picks_pods">
 
                         <div class="vol_picks_pod">
-                            <h2>Cayuga Nursing and Rehab</h1>
+                            <h2>Cayuga Nursing and Rehab</h2>
                             <p>Cayuga Nursing & Rehabilitation Center is a 144-bed skilled Nursing & Rehabilitation Center situated in Ithaca, NY. </p>
                             <img src="images/cayuganursing_vol.jpg" alt="">
                             <div class="pod_details">
@@ -62,7 +66,7 @@
                         </div>
 
                         <div class="vol_picks_pod">
-                            <h2>Beechtree Nursing</h1>
+                            <h2>Beechtree Nursing</h2>
                             <p>Beechtree Center is a 120-bed skilled nursing residence and rehabilitation center located in downtown Ithaca, New York.</p>
                             <img src="images/beechtree_vol.jpg" alt="">
                             <div class="pod_details">
@@ -73,7 +77,7 @@
                         </div>
 
                         <div class="vol_picks_pod">
-                            <h2>Oak Hill Manor</h1>
+                            <h2>Oak Hill Manor</h2>
                             <p>Oak Hill Manor is located in Ithaca, NY. This 60-bed facility is just minutes from Cayuga Medical Center and downtown Ithaca.</p>
                             <img src="images/oakhill_vol.jpg" alt="">
                             <div class="pod_details">
