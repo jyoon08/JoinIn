@@ -851,7 +851,7 @@ h2 {
 
 .about-section {
     background-color: rgb(255, 255, 255);
-    padding: 80px 0;
+
 }
 
 .About-us-heading {
@@ -860,10 +860,33 @@ h2 {
 }
 
 .about-container {
-    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px 75px 20px;
+}
+
+.about-images {
+    background-color: #3262b5;
+    max-width: 1100;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 20px 0;
+    gap: 20px;
+}
+
+img[alt="team photo 1"] {
+  width: 1000px;
+  height: auto;
+  margin-left: 100px;
+}
+
+img[alt="team photo 2"] {
+  width: 900px;
+  height: auto;
+  margin-left: 800px;
 }
