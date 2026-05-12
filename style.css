@@ -580,12 +580,12 @@ h2 {
   }
 }
 
-/* For organizations */
-.for-orgaizations-top {
-  height: 30vh;
-  width: 100%;
-  align-content: center;
-}
+ /* For organizations */
+ .for-orgaizations-top {
+     height: 30vh;
+     width: 100%;
+     align-content: center;
+ }
 
 .for-organizations-top-content {
   display: flex;
@@ -593,254 +593,265 @@ h2 {
   /* Aligns children to the top */
   justify-content: space-between;
 
-  /* Adjust this to set the exact distance from the navbar */
-  margin: auto;
-  width: 80%;
-  height: 100%;
-}
+     /* Adjust this to set the exact distance from the navbar */
+     margin: auto;
+     width: 80%;
+     height: 100%;
+ }
 
-.for-organizations-top-content button {
-  color: white;
-  border-radius: 20px;
-  border: 4px solid var(--orange-color);
-  background-color: var(--orange-color);
-  height: 120px;
-  width: 300px;
-  padding: 4px;
-  font-size: 1.8rem;
-  line-height: 1.4;
-  font-weight: bold;
-  margin: none;
-  transition: 0.3s ease;
-}
+ .for-organizations-top-content button {
+     color: white;
+     border-radius: 20px;
+     border: 4px solid var(--orange-color);
+     background-color: var(--orange-color);
+     Height: 120px;
+     width: 300px;
+     padding: 4px;
+     font-size: 1.8rem;
+     line-height: 1.4;
+     font-weight: bold;
+     margin: none;
+     transition: 0.3s ease;
 
-.for-organizations-top-content button:hover {
-  background-color: white;
-  color: #ff5a21;
-  cursor: pointer;
-  transform: scale(1.02);
-}
+ }
 
-.for-orgaizations-top-text {
-  color: #3262b5;
-}
+ .for-organizations-top-content button:hover {
+     background-color: white;
+     color: #ff5a21;
+     cursor: pointer;
+     transform: scale(1.02);
+ }
 
-.tree-image-text {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  height: 100%;
-}
+ .for-orgaizations-top-text {
+     color: #3262b5;
+ }
 
-.tree-image-text img {
-  box-shadow: 0px 7px 5px 5px #adadad;
-  border-radius: 50%;
-  margin: 0px 30px 0 0;
-  height: 80%;
-}
+ .tree-image-text {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+     height: 100%;
+ }
 
-@media screen and (max-width: 768px) {
-  .tree-image-text img {
-    display: none;
+ .tree-image-text img {
+     box-shadow: 0px 7px 5px 5px #adadad;
+     border-radius: 50%;
+     margin: 0px 30px 0 0;
+     height: 80%;
+
+ }
+
+ @media screen and (max-width: 768px) {
+     .tree-image-text img {
+         display: none;
+     }
+
+     .for-organizations-top-content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: none;
+     }
+
+     .for-organizations-top-content button {
+         margin: 30px;
+         width: 70%;
+     }
+
+     .for-orgaizations-top {
+         height: 33vh;
+     }
+
+     .for-organizations-top-text {
+         margin: 0px 15px;
+     }
+ }
+
+ /* For organizations- bottom*/
+ .hero-bottom {
+     background-color: var(--dark-blue-color);
+     height: 90vh;
+     align-content: center;
+     width: 100%;
+ }
+
+ .hero-bottom-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: auto;
+     width: 80%;
+
+ }
+
+ @media screen and (max-width: 768px) {
+     .hero-bottom-content {
+         flex-direction: column;
+         align-items: center;
+         justify-content: none;
+         width: 100%;
+     }
+
+     .hero-bottom-triplet {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+
+     .hero-bottom-LLH-LFL {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         gap: none;
+         justify-content: none;
+     }
+
+     .Hero-bottom-singular {
+         width: 100%;
+         margin: none;
+     }
+
+     .hero-bottom-LFL {
+         width: 50%;
+     }
+
+ }
+
+ .hero-bottom-triplet {
+     display: flex;
+     align-content: center;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: none;
+     height: 100%;
+ }
+
+
+
+ .hero-bottom-LLH-LFL {
+     display: flex;
+     gap: 50px;
+     margin: 50px 0px;
+     height: 75%;
+ }
+
+
+ .hero-bottom-LFL {
+     background: #eeeeee;
+     height: auto;
+     width: 40%;
+     border-radius: 40px;
+     display: flex;
+     flex-direction: column;
+     padding: 30px 30px 0px 30px;
+ }
+
+  .hero-bottom-LFL h2 {
+      font-size: 30px;
+      margin-bottom: 2rem;
   }
 
-  .for-organizations-top-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: none;
-  }
+ .hero-bottom-LFL p {
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
 
-  .for-organizations-top-content button {
-    margin: 30px;
-    width: 70%;
-  }
-
-  .for-orgaizations-top {
-    height: 33vh;
-  }
-
-  .for-organizations-top-text {
-    margin: 0px 15px;
-  }
-}
-
-/* For organizations- bottom*/
-.hero-bottom {
-  background-color: var(--dark-blue-color);
-  height: 90vh;
-  align-content: center;
-  width: 100%;
-}
-
-.hero-bottom-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  width: 80%;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-bottom-content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: none;
+ .hero-bottom-LFL img {
     width: 100%;
-  }
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: auto;
+    align-self: flex-end;
+ }
 
-  .hero-bottom-triplet {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+ .btn-fa {
+     width: 95%;
+     /* Adjusted width */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+ }
 
-  .hero-bottom-LLH-LFL {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: none;
-    justify-content: none;
-  }
+ .btn-fa button {
+     width: 100%;
+     /* Button fills parent */
+     background-color: #eeeeee;
+     /* Change to a visible color */
+     color: black;
+     border: none;
+     border-radius: 30px;
+     padding: 15px;
+     /* Added padding for height */
+     font-size: large;
+     font-weight: 700;
+     cursor: pointer;
+ }
 
-  .Hero-bottom-singular {
-    width: 100%;
-    margin: none;
-  }
+ .hero-bottom-LFL p {
+     flex-grow: 1;
+     /* Pushes the btn-fa to the bottom */
+     margin: 0px 10px;
+ }
 
-  .hero-bottom-LFL {
-    width: 50%;
-  }
-}
 
-.hero-bottom-triplet {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: none;
-  height: 100%;
-}
+ .Hero-bottom-singular {
+     background: white;
+     height: auto;
+     width: 28%;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     gap: 15px;
+     padding: 15px;
+ }
 
-.hero-bottom-LLH-LFL {
-  display: flex;
-  gap: 50px;
-  margin: 50px 0px;
-  height: 75%;
-}
+ .singular-sm {
+     background-color: rgb(207, 207, 207);
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 11vh;
+     width: 95%;
+ }
 
-.hero-bottom-LFL {
-  background: #eeeeee;
-  height: auto;
-  width: 40%;
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px 0px 30px;
-}
 
-.hero-bottom-LFL h2 {
-  font-size: 30px;
-  margin-bottom: 2rem;
-}
+ .singular-sm-triplet {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin-left: 10px;
+     padding: 4px 0px;
+ }
 
-.hero-bottom-LFL p {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
 
-.hero-bottom-LFL img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 30px;
-  margin: auto;
-  align-self: flex-end;
-}
+ .singular-sm-btn button {
+     background-color: rgb(155, 155, 155);
+     color: #111;
+     height: 100%;
+     width: 100%;
+     border: none;
+     border-radius: 4px;
+     margin-right: 10px;
+     font-weight: 700;
+     transition: background .3s ease;
+     padding: 2px;
+ }
 
-.btn-fa {
-  width: 95%;
-  /* Adjusted width */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ .singular-sm-btn {
+     width: 36%;
+     margin-right: 10px;
+ }
 
-.btn-fa button {
-  width: 100%;
-  /* Button fills parent */
-  background-color: #eeeeee;
-  /* Change to a visible color */
-  color: black;
-  border: none;
-  border-radius: 30px;
-  padding: 15px;
-  /* Added padding for height */
-  font-size: large;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.hero-bottom-LFL p {
-  flex-grow: 1;
-  /* Pushes the btn-fa to the bottom */
-  margin: 0px 10px;
-}
-
-.Hero-bottom-singular {
-  background: white;
-  height: auto;
-  width: 28%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 15px;
-  padding: 15px;
-}
-
-.singular-sm {
-  background-color: rgb(207, 207, 207);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 11vh;
-  width: 95%;
-}
-
-.singular-sm-triplet {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 10px;
-  padding: 4px 0px;
-}
-
-.singular-sm-btn button {
-  background-color: rgb(155, 155, 155);
-  color: #111;
-  height: 100%;
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  margin-right: 10px;
-  font-weight: 700;
-  transition: background 0.3s ease;
-  padding: 2px;
-}
-
-.singular-sm-btn {
-  width: 36%;
-  margin-right: 10px;
-}
-
-.singular-sm-btn button:hover {
-  background-color: #b3b3b3;
-  cursor: pointer;
-}
+ .singular-sm-btn button:hover {
+     background-color: #B3B3B3;
+     cursor: pointer;
+ }
 
 .about-section {
   background-color: rgb(255, 255, 255);
