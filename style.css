@@ -69,6 +69,7 @@ header {
   display: flex;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 nav {
@@ -90,6 +91,7 @@ nav {
 
 .menu li a {
   text-decoration: none;
+  min-width: 150px;
   padding: 40px 40px;
   color: #000000;
   text-align: center;
@@ -684,85 +686,109 @@ h2 {
 
  }
 
- @media screen and (max-width: 768px) {
-     .hero-bottom-content {
-         flex-direction: column;
-         align-items: center;
-         justify-content: none;
-         width: 100%;
-     }
-
-     .hero-bottom-triplet {
-         flex-direction: column;
-         align-items: center;
-         width: 100%;
-     }
-
-     .hero-bottom-LLH-LFL {
-         flex-direction: column;
-         align-items: center;
-         width: 100%;
-         gap: none;
-         justify-content: none;
-     }
-
-     .Hero-bottom-singular {
-         width: 100%;
-         margin: none;
-     }
-
-     .hero-bottom-LFL {
-         width: 50%;
-     }
-
- }
-
  .hero-bottom-triplet {
-     display: flex;
-     align-content: center;
-     flex-direction: column;
-     justify-content: space-between;
-     margin: none;
-     height: 100%;
- }
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: none;
+    height: 100%;
+}
 
 
 
- .hero-bottom-LLH-LFL {
-     display: flex;
-     gap: 50px;
-     margin: 50px 0px;
-     height: 75%;
- }
+.hero-bottom-LLH-LFL {
+    display: flex;
+    gap: 50px;
+    margin: 50px 0px;
+    height: 75%;
+}
 
 
- .hero-bottom-LFL {
-     background: #eeeeee;
-     height: auto;
-     width: 40%;
-     border-radius: 40px;
-     display: flex;
-     flex-direction: column;
-     padding: 30px 30px 0px 30px;
- }
+.hero-bottom-LFL {
+    background: #eeeeee;
+    height: auto;
+    width: 40%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 30px;
+}
 
-  .hero-bottom-LFL h2 {
-      font-size: 30px;
-      margin-bottom: 2rem;
-  }
+.hero-bottom-LFL h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
 
- .hero-bottom-LFL p {
+.hero-bottom-LFL p {
     font-size: 20px;
     margin-bottom: 10px;
- }
+}
 
- .hero-bottom-LFL img {
+.hero-bottom-LFL img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 30px;
     margin: auto;
     align-self: flex-end;
+}
+
+
+.hero-bottom-LFL p {
+    flex-grow: 1;
+    /* Pushes the btn-fa to the bottom */
+    margin: 0px 10px;
+}
+
+
+.Hero-bottom-singular {
+    background: white;
+    height: auto;
+    width: 28%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-bottom {
+      height: fit-content;
+    }
+    .hero-bottom-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        width: 100%;
+    }
+
+    .hero-bottom-triplet {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-bottom-LLH-LFL {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: none;
+        justify-content: none;
+    }
+
+    .Hero-bottom-singular {
+        width: 80%;
+        margin: none;
+    }
+
+    .hero-bottom-LFL {
+        width: 80%;
+    }
+
  }
 
  .btn-fa {
@@ -789,25 +815,6 @@ h2 {
      cursor: pointer;
  }
 
- .hero-bottom-LFL p {
-     flex-grow: 1;
-     /* Pushes the btn-fa to the bottom */
-     margin: 0px 10px;
- }
-
-
- .Hero-bottom-singular {
-     background: white;
-     height: auto;
-     width: 28%;
-     border-radius: 20px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-around;
-     gap: 15px;
-     padding: 15px;
- }
 
  .singular-sm {
      background-color: rgb(207, 207, 207);
@@ -883,6 +890,7 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical;
     min-height: 3rem;
+    font-family: "Fira Sans";
 }
 
 input[type=submit] {
@@ -904,7 +912,9 @@ input[type=submit]:hover {
 .contact_container {
     border-radius: 5px;
     width: 80%;
+    height: 100vh;
     margin: 0 auto;
+    padding: 40px 0;
 }
 .contact_container h1 {
     width: 100%;
@@ -912,7 +922,7 @@ input[type=submit]:hover {
     font-size: 5rem;
     font-weight: 600;
     color: var(--dark-blue-color);
-    margin: 40px 0 40px 0;
+    margin-bottom: 40px;
     line-height: 5rem;
 }
 
