@@ -880,6 +880,7 @@ h2 {
 
 img[alt="team photo 1"] {
   width: 1000px;
+  max-width: 100%; /* Keeps it responsive */
   height: auto;
   margin-left: 100px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -887,43 +888,47 @@ img[alt="team photo 1"] {
 
 img[alt="team photo 2"] {
   width: 900px;
+  max-width: 100%; /* Keeps it responsive */
   height: auto;
   margin-left: 800px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-@media screen and (max-width: 1456px) and (min-width: 900px) {
-    img[alt="team photo 2"] {
-        width: 900px;
-        height: auto;
-        margin-left: 100px;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+@media screen and (max-width: 1456px) {
+  img[alt="team photo 1"] {
+    margin-left: 50px; /* Aligns with photo 2 */
+  }
+
+  img[alt="team photo 2"] {
+    width: 900px;
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .about-images {
-        background-color: #3262b5;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-    img[alt="team photo 1"] {
-        width: 1000px;
-        height: auto;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        margin: none;
-    }
+  .about-images {
+    background-color: #3262b5;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 
-    img[alt="team photo 2"] {
-        width: 900px;
-        height: auto;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        margin: none;
-    }
-}
+  img[alt="team photo 1"] {
+    width: 100%; /* Adjusts to fit container on small screens */
+    max-width: 800px;
+    margin-left: 0; /* Clears left margin to allow flexbox centering */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
 
+  img[alt="team photo 2"] {
+    width: 100%;
+    max-width: 800px;
+    margin-left: 0;
+    padding-right: 0px; /* Fixed the 20x typo */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
 }
 
 .footer-grid {
