@@ -100,6 +100,7 @@ nav {
   color: #000000;
   text-align: center;
   transition: 0.3s;
+  text-wrap: nowrap;
 }
 
 .menu li a:hover {
@@ -176,7 +177,7 @@ nav input:checked ~ .menu {
   right: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .hamburger,
   .toggle_menu {
     display: block;
@@ -1025,5 +1026,11 @@ input[type=submit]:hover {
   .contact_container h1 {
     text-align: left;
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-grid {
+    text-align: center;
   }
 }
