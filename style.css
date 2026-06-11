@@ -677,9 +677,10 @@ h2 {
 /* For organizations- bottom*/
 .hero-bottom {
     background-color: var(--dark-blue-color);
-    height: 90vh;
+    min-height: 90vh;
     align-content: center;
     width: 100%;
+    padding: 30px 0;
 }
 
 .hero-bottom-content {
